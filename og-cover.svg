@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3eee4"/><stop offset="1" stop-color="#b7c99f"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#g)"/>
+<circle cx="935" cy="210" r="150" fill="#d7e8b8" opacity=".75"/>
+<path d="M760 510c95-18 125-130 148-260 82 78 145 150 184 260" fill="none" stroke="#294b38" stroke-width="26" stroke-linecap="round"/>
+<path d="M742 520c125 13 252 12 365 0M800 566c94 8 165 8 255 0" fill="none" stroke="#294b38" stroke-width="18" stroke-linecap="round"/>
+<text x="95" y="235" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" letter-spacing="8" fill="#294b38">AIRE RAÍZ</text>
+<text x="95" y="335" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="700" fill="#17211a">Entrená desde</text>
+<text x="95" y="413" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="700" fill="#3f6a4f">la raíz.</text>
+<text x="98" y="480" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#526056">Fuerza · Movilidad · Bienestar</text>
+</svg>
