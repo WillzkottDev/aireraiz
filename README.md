@@ -1,19 +1,18 @@
-# Aire Raíz — Cloudflare Workers Static Assets
+# Aire Raíz — Sala de danzas y expresiones artísticas
 
-## Configuración recomendada en Cloudflare
+Versión corregida y rediseñada para Cloudflare Workers Static Assets.
+
+## Cloudflare
 - Deploy command: `npx wrangler deploy`
-- Build command: dejar vacío
+- Build command: vacío
 - Root directory: `/`
-- Framework: Static / None
+- Assets publicados: `/public`
 
-Los archivos públicos están dentro de `/public`.
+## Datos configurados
+- WhatsApp: +54 9 2995 10-4753
+- Instagram: @aire__raiz
 
-## Corrección aplicada
-Se eliminó `_redirects` porque la regla `/* /index.html 200` generaba un bucle infinito
-en Cloudflare Workers Static Assets.
+## Imágenes
+Las imágenes actuales son fotografías de referencia de Pexels (gratuitas para uso). Conviene reemplazarlas por fotografías propias de Aire Raíz cuando estén disponibles.
 
-`wrangler.jsonc` usa:
-- assets.directory = `./public`
-- not_found_handling = `single-page-application`
-
-Así Cloudflare no intenta publicar `.git`, README u otros archivos internos del repositorio.
+No se incluyó `_redirects`, porque en la versión anterior generaba el error 100324 de loop infinito.

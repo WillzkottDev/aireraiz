@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3eee4"/><stop offset="1" stop-color="#b7c99f"/></linearGradient></defs>
-<rect width="1200" height="630" fill="url(#g)"/>
-<circle cx="935" cy="210" r="150" fill="#d7e8b8" opacity=".75"/>
-<path d="M760 510c95-18 125-130 148-260 82 78 145 150 184 260" fill="none" stroke="#294b38" stroke-width="26" stroke-linecap="round"/>
-<path d="M742 520c125 13 252 12 365 0M800 566c94 8 165 8 255 0" fill="none" stroke="#294b38" stroke-width="18" stroke-linecap="round"/>
-<text x="95" y="235" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" letter-spacing="8" fill="#294b38">AIRE RAÍZ</text>
-<text x="95" y="335" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="700" fill="#17211a">Entrená desde</text>
-<text x="95" y="413" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="700" fill="#3f6a4f">la raíz.</text>
-<text x="98" y="480" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#526056">Fuerza · Movilidad · Bienestar</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#6f2f37"/><circle cx="965" cy="140" r="220" fill="#b86c74" opacity=".35"/><circle cx="1030" cy="500" r="330" fill="#ecd2c4" opacity=".12"/><text x="90" y="210" font-family="Georgia,serif" font-size="76" fill="#fffaf4">Aire Raíz</text><text x="92" y="285" font-family="Arial,sans-serif" font-size="26" letter-spacing="5" fill="#ecd2c4">SALA DE DANZAS Y EXPRESIONES ARTÍSTICAS</text><text x="90" y="410" font-family="Georgia,serif" font-size="60" font-style="italic" fill="#fffaf4">Moverte. Crear. Expresarte.</text></svg>
