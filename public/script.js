@@ -1,41 +1,48 @@
 
-const header = document.querySelector('.topbar');
+const header = document.querySelector('.site-header');
 const menuBtn = document.querySelector('.menu-btn');
-const navLinks = document.querySelector('.nav-links');
+const nav = document.querySelector('.main-nav');
 
-window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 10);
+});
 
 menuBtn.addEventListener('click', () => {
-  const open = !navLinks.classList.contains('open');
-  navLinks.classList.toggle('open', open);
+  const open = !nav.classList.contains('open');
+  nav.classList.toggle('open', open);
   menuBtn.setAttribute('aria-expanded', String(open));
 });
 
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  navLinks.classList.remove('open');
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nav.classList.remove('open');
   menuBtn.setAttribute('aria-expanded', 'false');
 }));
 
-const io = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('visible');
-      io.unobserve(e.target);
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      io.unobserve(entry.target);
     }
   });
-},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}, { threshold: 0.12 });
 
-document.getElementById('lead-form').addEventListener('submit', (e)=>{
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+document.getElementById('lead-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const fd = new FormData(e.target);
+  const name = fd.get('name') || '';
+  const interest = fd.get('interest') || '';
+  const message = fd.get('message') || '';
+
   const text =
 `Hola Aire Raíz 👋
-Soy ${fd.get('name')}.
-Consulto: ${fd.get('forwhom')}.
-Me interesa: ${fd.get('interest')}.
-${fd.get('message') ? `Comentario: ${fd.get('message')}` : ''}
+Soy ${name}.
+Me interesa: ${interest}.
+${message ? `Consulta: ${message}` : ''}
 
-¿Me pasan información de clases, horarios y valores?`;
+¿Me pueden pasar información?`;
+
   window.open('https://wa.me/5492995104753?text=' + encodeURIComponent(text), '_blank', 'noopener');
 });

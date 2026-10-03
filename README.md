@@ -1,18 +1,19 @@
-# Aire Raíz — Sala de danzas y expresiones artísticas
+# Aire Raíz — versión alineada a la marca real
 
-Versión corregida y rediseñada para Cloudflare Workers Static Assets.
+## Qué se actualizó
+- Logo real incorporado.
+- Fotos/referencias proporcionadas por el usuario incorporadas al sitio.
+- Marca definida como "Sala de danzas y expresiones artísticas".
+- Clase destacada: Stretching, viernes 20 hs, para todo público.
+- Dirección visible: Barrio Central, Calle Marcelo Berbel 786.
+- Contactos visibles:
+  - +54 9 2994 09-3413
+  - +54 9 2995 10-4753
+- Instagram: @aire__raiz
+- Botón flotante de WhatsApp responsive.
+- Estructura Cloudflare corregida (solo /public, sin _redirects conflictivo).
 
-## Cloudflare
+## Deploy en Cloudflare
 - Deploy command: `npx wrangler deploy`
 - Build command: vacío
 - Root directory: `/`
-- Assets publicados: `/public`
-
-## Datos configurados
-- WhatsApp: +54 9 2995 10-4753
-- Instagram: @aire__raiz
-
-## Imágenes
-Las imágenes actuales son fotografías de referencia de Pexels (gratuitas para uso). Conviene reemplazarlas por fotografías propias de Aire Raíz cuando estén disponibles.
-
-No se incluyó `_redirects`, porque en la versión anterior generaba el error 100324 de loop infinito.
